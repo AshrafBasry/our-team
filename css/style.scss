@@ -1,0 +1,69 @@
+@import "./layouts.scss";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    max-width: 1200px;
+}
+svg{
+    height: 25px;
+}
+
+.team{
+    h2{
+        margin:15px 0;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        .title{
+            svg{
+                fill: #fff;background: #444;padding: 5px;border-radius: 10px;
+            }
+            span{
+                vertical-align: super;
+            }
+        }
+        .lines{
+            display: inline-block;
+            vertical-align: super;
+            span{
+                border: solid #000;
+                width: 30px;
+                display: inline-block;
+                border-radius: 100px;
+            }
+        }
+    }
+    .members{
+        .member{
+            background-color: #DEDCDA;
+            padding:10px;
+            display:inline-block;
+            border-radius:10px;
+            .img{
+                border-radius:15px;
+                overflow:hidden;
+                img{
+                    width:100%;
+                }
+            }
+            .info{
+                padding:5px;
+                h3{
+                    margin:0;
+                }
+                .social{
+                    text-align: center;display: flex;justify-content: space-between;margin-top: 10px;text-align: center;display: flex;justify-content: space-between;margin-top: 10px;
+                    svg:hover{
+                        opacity:.8;
+                    }
+                }
+            }
+        }
+    }
+}

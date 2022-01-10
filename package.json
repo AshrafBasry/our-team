@@ -1,0 +1,22 @@
+{
+  "name": "our-team",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-1-1-1/our-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-1-1-1/our-team/issues"
+  },
+  "homepage": "https://github.com/team-1-1-1/our-team#readme",
+  "dependencies": {
+    "sass": "^1.47.0"
+  }
+}

@@ -1,0 +1,115 @@
+.grid {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content;
+  justify-content: space-between;
+  grid-gap: 1%;
+}
+.grid img, .grid svg {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .grid.g-4 {
+    grid-template-columns: 100% !important;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .grid.g-4 {
+    grid-template-columns: 50% 50% !important;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid.g-4 {
+    grid-template-columns: 50% 50% !important;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid.g-4 {
+    grid-template-columns: 33.3% 33.3% 33.3% !important;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid.g-4 {
+    grid-template-columns: 24% 24% 24% 24% !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+svg {
+  height: 25px;
+}
+
+.team h2 {
+  margin: 15px 0;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+.team h2 .title svg {
+  fill: #fff;
+  background: #444;
+  padding: 5px;
+  border-radius: 10px;
+}
+.team h2 .title span {
+  vertical-align: super;
+}
+.team h2 .lines {
+  display: inline-block;
+  vertical-align: super;
+}
+.team h2 .lines span {
+  border: solid #000;
+  width: 30px;
+  display: inline-block;
+  border-radius: 100px;
+}
+.team .members .member {
+  background-color: #DEDCDA;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.team .members .member .img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.team .members .member .img img {
+  width: 100%;
+}
+.team .members .member .info {
+  padding: 5px;
+}
+.team .members .member .info h3 {
+  margin: 0;
+}
+.team .members .member .info .social {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.team .members .member .info .social svg:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */
