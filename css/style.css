@@ -1,7 +1,7 @@
 :root {
   --border-radius: 1.2rem;
-  --main-color: #e4b551;
-  --secondary-color: #e451a7;
+  --main-color: #DEDCDA;
+  --secondary-color: #707070;
   --main-text-color: #2c2c2c;
 }
 
@@ -19,8 +19,8 @@ img {
   margin-left: auto;
 }
 
-.mb-2 {
-  margin-bottom: 24px;
+.my-2 {
+  margin: 24px 0;
 }
 
 .mt-3 {
@@ -149,30 +149,30 @@ svg {
   height: 25px;
 }
 
-.team h2 {
+h2 {
   margin: 15px 0;
   justify-content: space-between;
   display: grid;
   grid-template-columns: max-content max-content;
 }
 
-.team h2 .title svg {
+h2 .title svg {
   fill: #fff;
   background: #444;
   padding: 5px;
   border-radius: 10px;
 }
 
-.team h2 .title span {
+h2 .title span {
   vertical-align: super;
 }
 
-.team h2 .lines {
+h2 .lines {
   display: inline-block;
   vertical-align: super;
 }
 
-.team h2 .lines span {
+h2 .lines span {
   border: solid #000;
   width: 30px;
   display: inline-block;
@@ -249,42 +249,41 @@ svg {
 }
 
 .our-work .works {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: space-between;
-  grid-gap: 40px;
+  grid-gap: 40px; */
 }
 
 .our-work .work-item {
-  border-radius: var(--border-radius);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
-  background: linear-gradient(#e4b5519d, #e4b5516e);
-  padding: 11px;
+  background: linear-gradient(var(--secondary-color), var(--main-color));
+  padding: 10px;
 }
 
 .our-work img {
-  border-radius: var(--border-radius);
+  border-radius: 15px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.438);
 }
 
-.our-work .item-body {
+.our-work .info {
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.our-work .item-body i {
+.our-work .info i {
   font-size: 12px;
   color: #fff;
   padding: 10px;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   border-radius: 0.25rem;
   text-align: center;
 }
-
-
 
 .skills {
   display: flex;
@@ -306,7 +305,7 @@ svg {
 
 .progress {
   height: 100%;
-  background: var(--main-color);
+  background: var(--secondary-color);
   border-radius: 3px;
   position: relative;
   animation: 1s ease 0s 1 loadBars;
