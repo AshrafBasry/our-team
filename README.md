@@ -1,4 +1,5 @@
-### 1st Team Project Name
+# 1st Team Project Name
+### Project Description
 
 ## Requirements
 
